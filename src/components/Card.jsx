@@ -17,7 +17,7 @@ import React, {useState} from 'react'
     <div>
        { isShown &&
        <div className="card">
-      <img src={`../../images/${img}`} alt="" />
+      <img src={`../../public/images/${img}`} alt="" />
       <span className="price">{price}</span>
       <div className="text">
       <h3 className="title">{title}</h3>  
