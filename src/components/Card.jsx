@@ -5,7 +5,7 @@ import React, {useState} from 'react'
   const [isShown, setIsShown] = useState(true);
   const [readMore, setReadMore] = useState(false);
 
-  function deleteTour() {
+  function deleteTours() {
       setIsShown(prevIsShown => !prevIsShown);
   }
 
@@ -23,7 +23,7 @@ import React, {useState} from 'react'
       <h3 className="title">{title}</h3>  
       <p className="info">{readMore ? info : info.substring(0, 200)}...</p>
       <button className='btn' onClick={readMoreBtn}>{readMore ? 'Show Less' : 'Read More'}</button>
-      <button className='delete-btn' onClick={deleteTour}>Not interested</button>
+      <button className='delete-btn' onClick={deleteTours}>Not interested</button>
       </div>
     </div>
     }
