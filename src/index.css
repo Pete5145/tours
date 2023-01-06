@@ -1,0 +1,109 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ebf7ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container {
+    margin-top: 80px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+.card {
+    display: inline-block;
+    min-height: 500px;
+    width: 350px;
+    background-color: #fff;
+    margin-top: 100px;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    height: 300px;
+    width: 350px;
+}
+
+.tours {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 50px;
+      grid-row-gap: 20px;
+}
+
+.card .price {
+    background-color: #ebf7ff;;
+    color: #49a6e9;
+    padding: 0.7rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 4px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+}
+
+.card .text {
+    padding: 20px 30px;
+}
+
+.card .title {
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.card .info {
+    color: #617d98;
+    margin-bottom: 0px;
+}
+
+.btn {
+    color: #49a6e9;
+    text-transform: capitalize;
+    font-size: 1rem;
+    cursor: pointer;
+    padding-left: 0.25rem;
+    background: transparent;
+    border-color: transparent;
+    display: inline;
+}
+
+.card .delete-btn {
+    display: block;
+    cursor: pointer;
+    color: #bb2525;
+    width: 200px;
+    margin: 1rem auto 0px;
+    background: transparent;
+    padding: 0.25rem 0.5rem;
+    border: 1px solid #bb2525;
+    border-radius: 0.25rem;
+    letter-spacing: 0.1rem;
+    font-size: 1rem;
+  }
+
+  /* Media Queries */
+
+  @media screen and (max-width: 765px) {
+      .tours {
+        display: block;
+      }
+  }
