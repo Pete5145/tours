@@ -17,7 +17,7 @@ function Card({img, price, title, info}) {
     <div>
        { isShown &&
        <div className="card">
-      <img src={`src/images/${img}`} alt="" />
+      <img src={`../../public/images/${img}`} alt="" />
       <span className="price">{price}</span>
       <div className="text">
       <h3 className="title">{title}</h3>  
