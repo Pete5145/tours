@@ -1,7 +1,7 @@
 import React, {useState} from 'react'
+import
 
 function Card({img, price, title, info}) {
-
   const [isShown, setIsShown] = useState(true);
   const [readMore, setReadMore] = useState(false);
 
@@ -17,7 +17,7 @@ function Card({img, price, title, info}) {
     <div>
        { isShown &&
        <div className="card">
-      <img src={`../../public/images/${img}`} alt="" />
+      <img src={`../images/${img}`} alt="" />
       <span className="price">{price}</span>
       <div className="text">
       <h3 className="title">{title}</h3>  
