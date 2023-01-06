@@ -1,6 +1,7 @@
 import React, {useState} from 'react'
 
-export default function Card({img, price, title, info}) {
+ const Card = ({img, price, title, info}) => {
+
   const [isShown, setIsShown] = useState(true);
   const [readMore, setReadMore] = useState(false);
 
@@ -30,3 +31,5 @@ export default function Card({img, price, title, info}) {
   );
 }
 
+
+export default Card;
